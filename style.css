@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
+
+:root{
+    --color-backgroud: #00030C;
+    --color-bottom: #167BF7;
+    --bottom-blue-hover: #3c92fa;
+    --color-font-main: #ffff;
+    --color-font: #F9F9F9;
+    --color-font-secundary:#C0C0C0;
+    --font-main: 'Inter', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--color-backgroud);
+    color: var(--color-font-main);
+    font-family: var(--font-main);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.section__primary{
+    background: url(assets/Background.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;  
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.cabeçalho__principal{
+    width: 50%;
+    margin: 0 16px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cabeçalho__principal__titulo{
+    font-size: 28px;
+    font-weight: 700;
+    width: 80%;
+}
+
+.cabeçalho__principal__combo{
+    margin:1em 0 2em 0;
+
+}
+
+.cabeçalho__principal__bottom{
+    display: block;
+    width: 512px;
+    margin-bottom: 1em;
+    text-decoration: none;
+    color: var(--color-font-main);
+    background: var(--color-bottom);
+    padding: 1em;
+    border-radius: 5px;
+}
+
+.cabeçalho__principal__bottom__secundario{
+    background: transparent;
+    border: 1px solid var(--color-font-main);
+}
+
+.cabeçalho__principal__paragrafo{
+    color: var(--color-font-secundary);
+    font-size: 12px;
+    
+}
+
+.section__secundary{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 13em 7em;
+}
+
+.secundary__image{
+    width: 80%;
+}
+
+.secundary__title{
+    margin-bottom: 0.2em;
+     font-size: 3em;
+     font-weight: 700;
+}
+
+.secundary__text{
+    font-weight: 400;
+    color: var(--color-font-secundary);
+}
+
+.secundary__bottom{
+    margin-top: 1em;
+    display: block;
+    width: 24%;
+    margin-bottom: 1em;
+    text-decoration: none;
+    color: var(--color-font-main);
+    background: var(--color-bottom);
+    padding: 1em;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.section__secundary__container {
+    padding: 2em;
+}
+
+.section__tertiary{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section__tertiary__dispositivos{
+    margin-top: 2.5em;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.section__tertiary__lista__itens{
+    font-size: 2em;
+    font-weight: 700;
+    color: var(--color-font-main);
+    text-align: center;
+    margin-top: 1em;
+}
+
+.footer{
+    text-align: center;
+    margin: 5em 3em;
+}
+
+.footer__nav{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 1em;
+}
+
+.footer__nav__links a{
+    text-decoration: none;
+    color: var(--branco-principal);
+    margin-left: 1em
+}
+
+.footer__text{
+    margin: 1em 1em;
+    color: var(--cinza-secundario);
+    font-size: 14px;
+}
+
+.footer__nav__links a:hover{
+    color: var(--color-bottom);
+}
+
+.footer__nav__links a:active{
+    color: purple;
+}
+
+.cabeçalho__principal__bottom:hover {
+    background-color: var(--bottom-blue-hover);
+    color: var(--color-backgroud)
+}
+
+.secundary__bottom:hover{
+    color: var(--color-backgroud) 
+}
+
+@media screen and (max-width: 768px) {
+    .section__primary{
+        background-image: none;
+        display: flex;
+        justify-content: center;
+       
+    }
+    .cabeçalho__principal{
+       margin: 2em 2em;
+
+    }
+
+    .cabeçalho__principal__combo{
+        width: 50vw;
+    }
+
+    .cabeçalho__principal__bottom{
+        width: 100%;
+    }
+
+    .cabeçalho__principal__titulo{
+        width: 100%;
+    }
+
+    .section__secundary{
+        margin: 10em 1em;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .secundary__image{
+        width: 50vw;
+    }
+
+    .secundary__bottom{
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        
+    }
+
+    .secundary__title{
+        font-size: 38px;
+        text-align: center;
+        margin: 0em 1em;
+    }
+
+    .section__tertiary__dispositivos{
+        display: block;
+    }
+
+    .footer__nav{
+        display: block;
+    }
+}
